@@ -31,9 +31,9 @@ const Navbar = () => {
           </button>
           <h1 className='logo'>ABUI</h1>
         <ul id='lists' className='nav-list'>
-           {navbarList.map((list,i)=>(
-            <li>
-              <a href={list.path} key={i} >{list.name}</a>
+           {navbarList.map((list,idx)=>(
+            <li key={idx}>
+              <a href={list.path} >{list.name}</a>
             </li>
            ))}
         </ul>

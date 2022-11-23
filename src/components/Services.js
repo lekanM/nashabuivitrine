@@ -7,8 +7,8 @@ const Services = () => {
     <div className='services'>
         <h1>Services</h1>
         <div className='services-content'>
-        {services.map((service)=>(
-          <ServicesCard 
+        {services.map((service,idx)=>(
+          <ServicesCard key={idx}
           path={service.imagePath} 
           title={service.title} 
           serviceDetail={service.serviceDetail} 
