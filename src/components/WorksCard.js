@@ -1,11 +1,10 @@
-import { height } from '@mui/system'
 import React from 'react'
 
-const WorksCard = ({path,imgHeight,alt}) => {
+const WorksCard = () => {
   return (
     <>
-    <img src={path} height={imgHeight} alt={alt}  />
-    </>
+{/*     <img src={path} height={imgHeight} alt={alt}  />
+ */}    </>
   )
 }
 
