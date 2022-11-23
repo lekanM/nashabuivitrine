@@ -1,13 +1,215 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo{
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 20px;
+}
+.nav-list{
+    user-select: none;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px 20px;
+    padding: 10px 0;
+    font-size:1.2em;
+    font-family: 'Kalam', cursive;
+    color:#ffffff
+}
+.nav-list li{
+    margin: 0 15px;
+}
+.nav-list a:hover{
+    padding: 10px 0 ;
+    border-bottom: 3px solid #180c00  ;
+}
+.nav-list a{
+   text-decoration: none;
+   color:#ffffff ;
+}
+.home-page{
+    margin-top: 50px;
+    height: 95vh;
+    background-image: url('./Rectangle\ 1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page h1{
+    font-size: 4rem;
+    font-family: 'Sacramento', cursive;
+    color:#fff;
+    opacity:0.5;
+}
+.about-section{
+ text-align: center;
+}
+
+.profil{
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+}
+.about-info{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ h1{
+    font-size: 3rem;
+    padding: 20px;
+}
+.about-info p{
+    width: 400px;
+    margin: 10px;
+    text-align: left;
+    word-break: break-all;
+    font-family:monospace;
+}
+.services{
+    background:#E5E8F1;
+    text-align: center;
+}
+button{
+    display: none;
+}
+
+.services-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.card{
+    width:330px;
+    padding: 10px;
+    
+}
+.card img{
+    width: 330px;
+    height:250px;
+    opacity: 0.7;
+}
+
+.card p{
+    padding: 5px;
+    text-align: center;
+    word-break: break-all;
+    font-family:serif;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-top:20px ;
+     padding: 10px;
+}
+
+.works-cardRow{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 ;
+    max-width: 1440px;
+}
+.works-cardColumn{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 ;
+}
+.works-cardColumn img{
+   margin-top: 5px;
+   vertical-align: middle;
+}
+
+
+/* mobile styling  */
+@media screen and (max-width:780px) {
+   .logo{
+    display: none;
+   }
+    button{
+    background: none;
+    border: none;
+    color: white;
+    display:inline-block;
+    float:left;
+    margin: 10px;
+   
+  
+    }
+    .navbar{
+        background: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .sideBarList{
+    user-select: none;
+    list-style: none;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    font-size:1.2em;
+    font-family: 'Kalam', cursive;
+    color:#ffffff;
+    }
+    .sideBarList li{
+        margin: 10px 10px;
+    }
+    .sidebar{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        background: #191919;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .home-page {
+        margin-top: 0;
+        height:50vh;
+    }
+
+    .about-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .profil{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .home-page {
+        margin-top: 0;
+        height:250px;
+    }
+    .about-info p{
+        width: 300px;
+    }
+
 }
