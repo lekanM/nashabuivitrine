@@ -129,21 +129,24 @@ button{
     display: flex;
     flex-wrap: wrap;
     padding: 0 ;
-    max-width: 1440px;
 }
 .works-cardColumn{
     flex: 25%;
     max-width: 25%;
-    padding: 0 ;
+    padding: 0  ;
 }
 .works-cardColumn img{
-   margin-top: 5px;
+   margin-top: 20px;
    vertical-align: middle;
+   width: 90%;
 }
 
-
+.container{
+    text-align: center;
+}
 /* mobile styling  */
 @media screen and (max-width:780px) {
+ 
    .logo{
     display: none;
    }
@@ -202,7 +205,13 @@ button{
     }
 
 }
-
+@media screen and(max-width:600px){
+ /*    .works-cardColumn{
+        flex: 100%;
+        max-width: 100%;
+        
+    } */
+}
 @media screen and (max-width:400px) {
     .home-page {
         margin-top: 0;

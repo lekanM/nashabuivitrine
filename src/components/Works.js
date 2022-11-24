@@ -4,7 +4,7 @@ const Works = () => {
   return (
     <div className='works'>
         <h1>Works</h1>
-        <div  >
+        <div className='container' >
         <section className='works-cardRow'>
           <div className='works-cardColumn'>
             <img src='images/workspics/works2.jpg' alt='you' />
