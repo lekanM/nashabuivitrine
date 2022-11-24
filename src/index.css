@@ -147,6 +147,16 @@ button{
 }
 /* mobile styling  */
 @media screen and (max-width:780px) {
+    .works-cardColumn{
+        flex: 50%;
+        max-width: 50%;
+        padding: 0  ;
+    }
+    .works-cardColumn img{
+       margin-top: 20px;
+       vertical-align: middle;
+       width: 90%;
+    }
  
    .logo{
     display: none;
@@ -208,6 +218,16 @@ button{
 }
 
 @media screen and (max-width:440px) {
+    .works-cardColumn{
+        flex: 100%;
+        max-width: 100%;
+        padding: 0  ;
+    }
+    .works-cardColumn img{
+       margin-top: 20px;
+       vertical-align: middle;
+       width: 90%;
+    }
     .about-info p{
         width: 250px;
     }
