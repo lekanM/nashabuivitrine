@@ -12,7 +12,7 @@ const Works = () => {
           </div>
           <div className='works-cardColumn'>
             <img src='images/workspics/work3.jpg' alt='you' />
-            <img src='images/workspics/works2.jpg' alt='you' />
+            <img src='images/workspics/works5.jpg' alt='you' />
           </div>
           <div className='works-cardColumn'>
             <img src='images/workspics/first.jpg' alt='you' />
@@ -21,7 +21,7 @@ const Works = () => {
           </div>
           <div className='works-cardColumn'>
             <img src='images/workspics/works1.jpg' alt='you' />
-            <img src='images/workspics/works2.jpg' alt='you' />
+            <img src='images/workspics/works6.jpg' alt='you' />
           </div>
         </section>
         </div>
