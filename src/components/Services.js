@@ -4,8 +4,8 @@ import ServicesCard from './servicesCard';
 
 const Services = () => {
   return (
-    <div className='services'>
-        <h1>Services</h1>
+    <div id='services' className='services'>
+        <h1 className='headerh1'>Services</h1>
         <div className='services-content'>
         {services.map((service,idx)=>(
           <ServicesCard key={idx}

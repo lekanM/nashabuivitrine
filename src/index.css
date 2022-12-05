@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 .navbar{
@@ -13,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    z-index: 10;
 }
 
 .logo{
@@ -53,43 +56,48 @@
     justify-content: center;
     align-items: center;
 }
-.home-page h1{
-    font-size: 4rem;
-    font-family: 'Sacramento', cursive;
-    color:#fff;
-    opacity:0.5;
-}
 .about-section{
  text-align: center;
 }
 
 .profil{
-    height: 330px;
-    width: 330px;
-    border-radius: 50%;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: #191919 -80px 10px 1px
+ ;
 }
 .about-info{
     margin: 20px auto;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
+    width: 90%;
 }
+.about-info h3{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
  h1{
     font-size: 3rem;
     padding: 20px;
 }
+
 .about-info p{
-    width: 400px;
-    margin: 10px;
+    width: 410px;
+    font-weight: 500;
+    margin: 5px 20px;
+    font-size: 1.1em;
     text-align: left;
     word-break: break-all;
-    font-family:monospace;
+    font-family:serif;
+    color: #555;
 }
 .services{
     background:#E5E8F1;
     text-align: center;
 }
-button{
+.btn{
     display: none;
 }
 
@@ -108,9 +116,7 @@ button{
 .card img{
     width: 100%;
     height:250px;
-    opacity: 0.7;
 }
-
 .card p{
     padding: 5px;
     text-align: center;
@@ -118,12 +124,27 @@ button{
     font-family:serif;
     font-size: 1em;
 }
+ .headerh1{
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    background: #000 url('../public/images/works6.jpg') no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+}
 .works{
     display: flex;
+    background-color: #000;
     flex-direction: column;
     align-items: center;
-     margin-top:20px ;
-     padding: 10px;
+    width: 100%;
+}
+.workcontainer{
+    background: #0c0c0c;
+    background: url('../public/images/wall.jpg');
+    background-size: cover;
 }
 
 .works-cardRow{
@@ -141,12 +162,106 @@ button{
    vertical-align: middle;
    width: 90%;
 }
+.works-cardColumn img:hover{
+    transform: scale(0.8);
+}
 
-.container{
+#contact{
+    display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 20px; 
+}
+
+.form{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:10px;
+}
+.form section{
+    width: 45%;
+    padding:10px
+}
+.form-section{
     text-align: center;
 }
+.form-shadow{
+    box-shadow: inset 5px 5px 5px #00000020, inset -5px -5px 5px #00000020;
+
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px #0c0c0c solid;
+    padding: 10px;
+    outline:none;
+}
+
+textarea{
+    padding: 10px;
+    width: 100%;
+    resize: vertical;
+}
+.contactBtn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #180c00;
+    color:#E5E8F1;
+    margin-bottom: 10px;
+    
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    align-items: center;
+    border: none;
+    box-shadow: inset 5px 5px 5px #00000020, inset -5px -5px 5px #00000020;
+}
+.location ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.location li{
+width: 100%;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+padding: 10px;
+}
+span{
+    width: 150px;
+}
+
+.list-icon{
+    border: 1px solid #19191950;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+
+
 /* mobile styling  */
-@media screen and (max-width:780px) {
+@media screen and (max-width:1010px) {
+    .about-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-info div{
+        margin: 10px;
+    }
     .works-cardColumn{
         flex: 50%;
         max-width: 50%;
@@ -158,10 +273,23 @@ button{
        width: 90%;
     }
  
+}
+@media screen and (max-width:780px) {
+    /* .works-cardColumn{
+        flex: 50%;
+        max-width: 50%;
+        padding: 0  ;
+    }
+    .works-cardColumn img{
+       margin-top: 20px;
+       vertical-align: middle;
+       width: 90%;
+    } */
+ 
    .logo{
     display: none;
    }
-    button{
+    .btn{
     background: none;
     border: none;
     color: white;
@@ -188,7 +316,8 @@ button{
     color:#ffffff;
     }
     .sideBarList li{
-        margin: 10px 10px;
+        margin: 20px 10px;
+        padding:10px
     }
     .sidebar{
         position: fixed; 
@@ -218,6 +347,17 @@ button{
 }
 
 @media screen and (max-width:440px) {
+   .about-me{
+    width: 350px;
+    height: 600px;
+   }
+   .about-me p{
+    width: 300px;
+   }
+   .profil{
+    width: 300px;
+    box-shadow: none;
+   }
     .works-cardColumn{
         flex: 100%;
         max-width: 100%;
@@ -228,9 +368,7 @@ button{
        vertical-align: middle;
        width: 90%;
     }
-    .about-info p{
-        width: 250px;
-    }
+  
     .card{
         width:250px;
         padding: 10px;
