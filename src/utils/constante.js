@@ -66,11 +66,11 @@ export const userDetail =[
     },
     {
         icon:<PhoneIcon/>,
-        detail:'+228 90923845'
+        detail:'+228 98905062'
     },
     {
         icon:<EmailIcon/>,
-        detail:'sodjom@gmail.com'
+        detail:'nashabui@gmail.com'
     }
 ]
 export const socialMediaLink=[

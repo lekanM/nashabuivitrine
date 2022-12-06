@@ -207,6 +207,7 @@ textarea{
     padding: 10px;
     width: 100%;
     resize: vertical;
+    height: 100px;
 }
 .contactBtn{
     padding: 10px 20px;
@@ -230,7 +231,8 @@ textarea{
     width: 100%;
     list-style: none;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    align-items: center; 
 }
 
 .location li{
