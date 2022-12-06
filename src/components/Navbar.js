@@ -34,7 +34,7 @@ const Navbar = () => {
           sideBAr?<MenuIcon/>:<CloseIcon/>
         }</span>
           </button>
-          <h1 className='logo'>ABUI</h1>
+          <a href='#header' className='logo'><img src="images/logo.png" alt="logo" /></a>
         <ul id='lists' className='nav-list'>
            {navbarList.map((list,idx)=>(
             <li key={idx}>

@@ -1,6 +1,13 @@
 import LocationIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import FaceIcon from '@mui/icons-material/Facebook';
+import InstaIcon from '@mui/icons-material/Instagram';
+import TweeIcon from '@mui/icons-material/Twitter';
+import YoutubIcon from '@mui/icons-material/YouTube';
+
+
+
 
 
 
@@ -66,5 +73,22 @@ export const userDetail =[
         detail:'sodjom@gmail.com'
     }
 ]
-export const socialMediaLink=[]
+export const socialMediaLink=[
+    {
+        link:'',
+        icon:<FaceIcon/>
+    },
+    {
+        link:'',
+        icon:<InstaIcon/>
+    },
+    {
+        link:'',
+        icon:<TweeIcon/>
+    },
+    {
+        link:'',
+        icon:<YoutubIcon/>
+    },
+]
 

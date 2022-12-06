@@ -85,13 +85,12 @@
 
 .about-info p{
     width: 410px;
-    font-weight: 500;
+    font-weight: 300;
     margin: 5px 20px;
-    font-size: 1.1em;
     text-align: left;
     word-break: break-all;
-    font-family:serif;
-    color: #555;
+    font-family: 'Cormorant Garamond';
+    color: #00000099;
 }
 .services{
     background:#E5E8F1;
@@ -123,6 +122,12 @@
     word-break: break-all;
     font-family:serif;
     font-size: 1em;
+}
+h1{
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
 }
  .headerh1{
     font-family: 'Kalam', cursive;
@@ -248,7 +253,21 @@ span{
     border-radius: 50%;
 }
 
-
+.foot{
+    background: #0c0c0c;
+    text-align: center;
+    padding: 40px;
+}
+.foot p{
+    color: #ffffff50;
+    width: 300px;
+    margin: 5px  auto 10px;
+}
+.foot a{
+    margin: 10px;
+    padding: 5px;
+    color: #ffffff50;
+}
 
 
 

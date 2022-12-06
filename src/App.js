@@ -1,7 +1,7 @@
 import React from 'react';
 
 //exporting components
-import {Navbar,About,Services,Works,Contact} from './components';
+import {Navbar,About,Services,Works,Contact,Foot} from './components';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Services/>
        <Works/>
       <Contact/> 
+      <Foot/>
     </>
    
   )
