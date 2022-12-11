@@ -5,6 +5,9 @@ import FaceIcon from '@mui/icons-material/Facebook';
 import InstaIcon from '@mui/icons-material/Instagram';
 import TweeIcon from '@mui/icons-material/Twitter';
 import YoutubIcon from '@mui/icons-material/YouTube';
+import PaintIcon from '@mui/icons-material/Create';
+import BrushIcon from '@mui/icons-material/Brush';
+import DesignIcon from '@mui/icons-material/DesignServices';
 
 
 
@@ -40,24 +43,22 @@ export const navbarList=[
 export const services=[
     {
         imagePath:'images/nashpic/portrait8.png',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        title:'Pen Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<PaintIcon/>
     },
     {
-        imagePath:'images/nashpic/portrait8.png',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        imagePath:'images/nashpic/portrait2.png',
+        title:'Painting Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<BrushIcon/>
     },
     {
-        imagePath:'images/nashpic/portrait8.png',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        imagePath:'images/nashpic/portrait3.png',
+        title:'Pencil Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<DesignIcon/>
     },
-    {
-        imagePath:'images/nashpic/portrait8.png',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
-    }
 ];
 export const userDetail =[
     {

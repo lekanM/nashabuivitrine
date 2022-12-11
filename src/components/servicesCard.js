@@ -1,8 +1,9 @@
 import React from 'react'
 
-const servicesCard = ({path,title,serviceDetail}) => {
+const servicesCard = ({path,title,serviceDetail,icon}) => {
   return (
     <div className='card'>
+      <span>{icon}</span> 
       <img src={path} alt='hi'/>
       <section>
         <h3>{title}</h3>

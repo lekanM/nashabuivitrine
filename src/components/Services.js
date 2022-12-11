@@ -12,6 +12,7 @@ const Services = () => {
           path={service.imagePath} 
           title={service.title} 
           serviceDetail={service.serviceDetail} 
+          icon={service.icon}
           />
         ))}
         </div>
