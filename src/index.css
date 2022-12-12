@@ -56,6 +56,30 @@
     justify-content: center;
     align-items: center;
 }
+.home-page section{
+    color: #fff;
+    display: flex;
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.home-page ul{
+   list-style: none;
+   position: relative;
+   top: 0;
+   animation: anime 4s ease-in-out 2s infinite alternate ;
+}
+@keyframes anime{
+    from{top: 0;}
+    to{top: -51px;}
+}
+.animation-container{
+    position: relative;
+    height: 51px;
+    overflow: hidden;
+}
+
 .about-section{
  text-align: center;
 }
@@ -199,12 +223,14 @@ h1{
 }
 .form section{
     width: 45%;
+/*     min-width: 300px; */
     padding:10px
 }
 .form-section{
     text-align: center;
 }
 .form-shadow{
+    margin: 20px 0;
     box-shadow: inset 5px 5px 5px #00000020, inset -5px -5px 5px #00000020;
 
 }
@@ -238,6 +264,7 @@ textarea{
     min-width: 300px;
     align-items: center;
     border: none;
+    margin: 20px 0;
     box-shadow: inset 5px 5px 5px #00000020, inset -5px -5px 5px #00000020;
 }
 .location ul{
@@ -278,10 +305,14 @@ span{
     width: 300px;
     margin: 5px  auto 10px;
 }
+.foot h1{
+    color: #ffffff50;
+}
 .foot a{
     margin: 10px;
     padding: 5px;
     color: #ffffff50;
+    text-decoration: none;
 }
 
 
@@ -384,6 +415,10 @@ span{
    .about-me{
     width: 350px;
     height: 600px;
+    overflow: hidden;
+   }
+   .form section{
+    min-width: 300px;
    }
    .about-me p{
     width: 300px;

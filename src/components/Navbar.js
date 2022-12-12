@@ -45,6 +45,13 @@ const Navbar = () => {
     </nav>
      <div className='home-page'>
      <section>
+      <h3>Hi,</h3>
+      <div className="animation-container">
+      <ul className='animeul'>
+        <li>m'nash ABUI</li>
+        <li>Paint artist</li>
+      </ul>
+      </div>
      </section>
  </div>
  </header>

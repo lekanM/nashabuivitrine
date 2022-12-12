@@ -63,7 +63,7 @@ export const services=[
 export const userDetail =[
     {
         icon:<LocationIcon/>,
-        detail:'Agoè-sorade'
+        detail:'LOME-TOGO'
     },
     {
         icon:<PhoneIcon/>,
