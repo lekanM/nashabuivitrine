@@ -4,14 +4,15 @@ import ServicesCard from './servicesCard';
 
 const Services = () => {
   return (
-    <div className='services'>
-        <h1>Services</h1>
+    <div id='services' className='services'>
+        <h1 className='headerh1'>Services</h1>
         <div className='services-content'>
-        {services.map((service)=>(
-          <ServicesCard 
+        {services.map((service,idx)=>(
+          <ServicesCard key={idx}
           path={service.imagePath} 
           title={service.title} 
           serviceDetail={service.serviceDetail} 
+          icon={service.icon}
           />
         ))}
         </div>

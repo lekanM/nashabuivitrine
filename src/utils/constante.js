@@ -1,102 +1,95 @@
+import LocationIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import FaceIcon from '@mui/icons-material/Facebook';
+import InstaIcon from '@mui/icons-material/Instagram';
+import TweeIcon from '@mui/icons-material/Twitter';
+import YoutubIcon from '@mui/icons-material/YouTube';
+import PaintIcon from '@mui/icons-material/Create';
+import BrushIcon from '@mui/icons-material/Brush';
+import DesignIcon from '@mui/icons-material/DesignServices';
+
+
+
+
+
+
 export const navbarList=[
     {
         name:'Home',
-        path:''
+        path:'#header'
     },
     {
         name:'About',
-        path:''
+        path:'#about'
     },
     {
         name:'Services',
-        path:''
+        path:'#services'
     },
     {
         name:'Works',
-        path:''
+        path:'#works'
     },
-    {
+  /*   {
         name:'Blog',
-        path:''
-    },
+        path:'#blog'
+    }, */
     {
         name:'Contact',
-        path:''
+        path:'#contact'
     },
 ]
 export const services=[
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        imagePath:'images/nashpic/portrait8.png',
+        title:'Pen Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<PaintIcon/>
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        imagePath:'images/nashpic/portrait2.png',
+        title:'Painting Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<BrushIcon/>
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        imagePath:'images/nashpic/portrait3.png',
+        title:'Pencil Portrait',
+        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper',
+        icon:<DesignIcon/>
+    },
+];
+export const userDetail =[
+    {
+        icon:<LocationIcon/>,
+        detail:'LOME-TOGO'
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        icon:<PhoneIcon/>,
+        detail:'+228 98905062'
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper '
+        icon:<EmailIcon/>,
+        detail:'nashabui@gmail.com'
+    }
+]
+export const socialMediaLink=[
+    {
+        link:'',
+        icon:<FaceIcon/>
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        link:'',
+        icon:<InstaIcon/>
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        link:'',
+        icon:<TweeIcon/>
     },
     {
-        imagePath:'images/service.jpg',
-        title:'Web Designer',
-        serviceDetail:'web ui/ux designer am a great web developper web ui/ux designer am a great web developper web ui/ux designer am a great web developper'
+        link:'',
+        icon:<YoutubIcon/>
     },
 ]
-export const socialMediaLink=[]
 
-export const works=[
-    {
-        path:'images/workspics/works2.jpg',
-        height:'660px',
-        alt:'',
-    },
-    {
-        path:'images/workspics/work3.jpg',
-        height:'330px',
-        alt:'',
-    },
-    {
-        path:'images/workspics/works1.jpg',
-        height:'250px',
-        alt:'',
-    },
-    {
-        path:'images/workspics/first.jpg',
-        height:'330px',
-        alt:'',
-    },
-    {
-        path:'images/workspics/works1.jpg',
-        height:'250px',
-        alt:'',
-    },
-    {
-        path:'images/workspics/works2.jpg',
-        height:'660px',
-        alt:'',
-    },
-]

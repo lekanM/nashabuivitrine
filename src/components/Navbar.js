@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close'
 
 
 import {navbarList} from '../utils/constante'
@@ -25,19 +27,35 @@ const Navbar = () => {
     
   }
   return (
+    <header id='header'>
     <nav id='nav' className='navbar'>
-        <button onClick={sideBarHandler}>
-        <i id='open' >open</i>
+        <button className='btn' onClick={sideBarHandler}>
+        <span id='open' >{
+          sideBAr?<MenuIcon/>:<CloseIcon/>
+        }</span>
           </button>
-          <h1 className='logo'>ABUI</h1>
+          <a href='#header' className='logo'><img src="images/logo.png" alt="logo" /></a>
         <ul id='lists' className='nav-list'>
-           {navbarList.map((list,i)=>(
-            <li>
-              <a href={list.path} key={i} >{list.name}</a>
+           {navbarList.map((list,idx)=>(
+            <li key={idx}>
+              <a href={list.path} >{list.name}</a>
             </li>
            ))}
         </ul>
     </nav>
+     <div className='home-page'>
+     <section>
+      <h3>Hi,</h3>
+      <div className="animation-container">
+      <ul className='animeul'>
+        <li>m'nash ABUI</li>
+        <li>Paint artist</li>
+      </ul>
+      </div>
+     </section>
+ </div>
+ </header>
+    
   )
 }
 
